@@ -1,0 +1,8 @@
+transformers
+spacy
+nltk
+textstat
+matplotlib
+plotly
+PyMuPDF
+pdfminer.six
