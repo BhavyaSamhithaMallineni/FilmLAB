@@ -47,7 +47,7 @@ ScriptWhisper acts as a virtual writing coach using NLP to:
 - **NLP Models**:
   - `distilBERT` / `RoBERTa` – for emotion and sentiment analysis
   - `BART` (zero-shot) – for beat classification
-  - GPT-4 / Claude – for AI-generated rewrites
+  - GPT-4 – for AI-generated rewrites
 - **Tools**: SpaCy, Regex, Matplotlib/Plotly for visualizations
 
 ---
