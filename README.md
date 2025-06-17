@@ -1,73 +1,74 @@
-# 🎬 FilmLab: ScriptWhisper - AI-Powered Screenwriting Assistant
+# 🎬 ScriptWhisper – Your AI-Powered Screenwriting Companion
 
-**Status**: 🚧 In Development  
-**Author**: Bhavya Samhitha Mallineni
-
-## 🧠 About This Project
-
-This project is part of **FilmLab**, an initiative to bridge the gap between artificial intelligence and storytelling. 
-
-**ScriptWhisper** is an AI/NLP-based platform designed to help aspiring screenwriters—especially those without formal training—craft emotionally resonant, well-structured, and properly formatted screenplays.
-
-The goal is to democratize storytelling by offering real-time feedback, emotional analysis, and AI-generated rewrite suggestions to improve the quality of any screenplay.
+**Author**: Bhavya Samhitha Mallineni  
+**Status**: 🚧 In Development | Part of the FilmLab Initiative  
+**Demo**: Coming Soon  
+**Last Updated**: June 2025  
 
 ---
 
-## 🎯 Problem Statement
+## 🧠 What is ScriptWhisper?
 
-Aspiring writers often have brilliant ideas but struggle with the technical aspects of screenwriting—such as structure, formatting, pacing, and emotional development. Without affordable access to professional guidance, many promising scripts go unrecognized.
+**ScriptWhisper** is an AI-powered platform that helps screenwriters—especially beginners—craft emotionally rich, well-structured, and industry-formatted scripts. It's your intelligent co-writer, editor, and mentor rolled into one tool.
 
----
-
-## ✅ Solution Overview
-
-ScriptWhisper acts as a virtual writing coach using NLP to:
-- Detect and correct formatting errors
-- Analyze emotional arcs across scenes
-- Identify key story beats (setup, climax, resolution)
-- Evaluate and rewrite character dialogues
-- Educate users with examples and insights from real films
+Built with NLP and storytelling logic, ScriptWhisper supports the entire screenwriting journey—from your first idea to a professionally formatted final draft.
 
 ---
 
-## 🚀 Key Features (Planned MVP)
+## 🎯 Why ScriptWhisper?
 
-- 📝 **Format Checker** – Validates scene headings, actions, dialogues
-- 📊 **Emotional Arc Analyzer** – Visualizes emotional intensity page-by-page
-- 🎭 **Story Structure Validator** – Detects act breaks and beat points
-- 🗣️ **Dialogue Evaluator** – Scores tone and realism, with AI-powered rewrites
-- 🧠 **Learning Layer** – Offers brief explanations and tips
+> “Everyone has a story. But not everyone has a screenwriting coach.”
+
+Creative writers often struggle with:
+- Proper screenplay formatting
+- Building strong story structures
+- Maintaining emotional tone and pacing
+- Getting affordable feedback
+
+**ScriptWhisper solves these problems with AI**, making screenwriting accessible, educational, and inspiring.
+
+---
+
+## ✨ Key Features
+
+| 🛠 Feature | Description |
+|-----------|-------------|
+| 💡 **Idea Generator** | Generates film, episode, or character ideas from simple prompts |
+| 🖋️ **Script Editor** | Rich-text editor with auto-formatting and grammar correction |
+| 📝 **Format Validator** | Checks for errors in scene headings, dialogue, action blocks |
+| 📊 **Emotional Arc Analyzer** | Visualizes scene-by-scene emotional intensity using NLP |
+| 🎭 **Story Structure Validator** | Identifies act breaks and beat points (setup, midpoint, climax, resolution) |
+| 🗣️ **Dialogue Evaluator** | Analyzes and suggests improvements to character dialogue |
+| 🧠 **Learning Layer** | Pop-up writing tips with examples from iconic films |
+| 💾 **Save & Export** *(Planned)* | Save projects and export to PDF or Final Draft |
+| 🎬 **Genre-Aware Feedback** *(Planned)* | Tailored feedback for genres like comedy, thriller, drama |
 
 ---
 
 ## 🧪 Tech Stack
 
-- **Frontend**: Streamlit (Prototype), React (Future)
-- **Backend**: FastAPI / Flask
-- **NLP Models**:
-  - `distilBERT` / `RoBERTa` – for emotion and sentiment analysis
-  - `BART` (zero-shot) – for beat classification
-  - GPT-4 – for AI-generated rewrites
-- **Tools**: SpaCy, Regex, Matplotlib/Plotly for visualizations
+| Layer      | Tools & Libraries |
+|------------|-------------------|
+| **Frontend** | `Streamlit` (MVP), `React.js + Slate.js` (Future) |
+| **Backend**  | `FastAPI` / `Flask`, REST APIs |
+| **NLP Models** | `GPT-4`, `BART`, `DistilBERT`, `RoBERTa`, `SpaCy`, `Regex`, `LanguageTool API` |
+| **Visualization** | `Matplotlib`, `Plotly` |
+| **Export Tools** | `PDFKit`, `Fountain syntax` (Planned) |
 
 ---
 
-## 🧾 Project Roadmap
+## 📂 Project Structure (Planned)
 
-- **Phase 1**: Format checker + emotion graph (Streamlit prototype)
-- **Phase 2**: Add beat detection + scene type classification
-- **Phase 3**: Integrate GPT-based rewrites + user feedback loop
-- **Phase 4**: User authentication, project saving, genre-based models
-
----
-
-## 📂 Repository Structure (Expected)
-
-```bash
 FilmLab-ScriptWhisper/
-├── data/                 # Sample screenplay scripts
-├── models/               # NLP models and inference utilities
-├── utils/                # Format checkers, preprocessors, etc.
-├── app/                  # Streamlit or web app components
-├── README.md             # Project overview
-└── requirements.txt      # Dependencies
+├── app/
+│ ├── editor/ # Screenplay editor components
+│ ├── analyzer/ # Emotion + structure analysis
+│ └── components/ # Reusable UI parts (charts, alerts, etc.)
+├── prompts/ # Prompt templates for idea generation
+├── utils/ # Format checkers, grammar validators
+├── scripts/ # Exporters (PDF, Final Draft)
+├── models/ # NLP model loading and utilities
+├── data/ # Sample screenplays
+├── requirements.txt # Python dependencies
+└── README.md # This file
+
